@@ -1,8 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300,700);
 
-
-// --- COMPONANENTS --- //
-
 header {
   border-top: 10px solid #6fc818;
   padding-top: 4em;
@@ -22,6 +19,9 @@ header {
         color: #333;
         position: relative;
         left: -0.6em;
+      }
+      &:hover {
+        color: #333;
       }
     }
     .first-link {
@@ -66,6 +66,9 @@ footer {
     border-bottom: 0.15em solid #6fc818;
     font-size: 1.1em;
     padding-bottom: 0.1em;
+    &:hover {
+      color: #6fc818;
+    }
   }
   .row {
     padding-bottom: 1.7em;
@@ -110,3 +113,5 @@ footer {
     padding-bottom: 1.2em;
   }
 }
+
+

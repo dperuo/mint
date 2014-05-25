@@ -8,34 +8,38 @@
  *  
  */
 @import url(http://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300,700);
-/* line 6, ../scss/_custom.scss */
+/* line 3, ../scss/_custom.scss */
 header {
   border-top: 10px solid #6fc818;
   padding-top: 4em;
 }
-/* line 9, ../scss/_custom.scss */
+/* line 6, ../scss/_custom.scss */
 header .row:last-child {
   border-bottom: 1px solid #ccc;
   margin-bottom: 3em;
 }
-/* line 13, ../scss/_custom.scss */
+/* line 10, ../scss/_custom.scss */
 header img {
   max-width: 200px;
 }
-/* line 16, ../scss/_custom.scss */
+/* line 13, ../scss/_custom.scss */
 header ul {
   font-weight: bold;
 }
-/* line 18, ../scss/_custom.scss */
+/* line 15, ../scss/_custom.scss */
 header ul a {
   color: #333;
 }
-/* line 20, ../scss/_custom.scss */
+/* line 17, ../scss/_custom.scss */
 header ul a:before {
   content: '\2022';
   color: #333;
   position: relative;
   left: -0.6em;
+}
+/* line 23, ../scss/_custom.scss */
+header ul a:hover {
+  color: #333;
 }
 /* line 28, ../scss/_custom.scss */
 header ul .first-link:before {
@@ -74,22 +78,26 @@ footer a {
   font-size: 1.1em;
   padding-bottom: 0.1em;
 }
-/* line 70, ../scss/_custom.scss */
+/* line 69, ../scss/_custom.scss */
+footer a:hover {
+  color: #6fc818;
+}
+/* line 73, ../scss/_custom.scss */
 footer .row {
   padding-bottom: 1.7em;
 }
-/* line 73, ../scss/_custom.scss */
+/* line 76, ../scss/_custom.scss */
 footer .contact {
   font-size: 1.1em;
 }
 
-/* line 82, ../scss/_custom.scss */
+/* line 85, ../scss/_custom.scss */
 .sidebar {
   border: 0.2em solid #6fc818;
   max-width: 300px;
   border-radius: 1em;
 }
-/* line 86, ../scss/_custom.scss */
+/* line 89, ../scss/_custom.scss */
 .sidebar h6 {
   display: block;
   width: 100%;
@@ -102,7 +110,7 @@ footer .contact {
   font-size: 1.2em;
   border-radius: 0.5em 0.5em 0 0;
 }
-/* line 98, ../scss/_custom.scss */
+/* line 101, ../scss/_custom.scss */
 .sidebar dl {
   margin: 0;
   padding-top: 1em;
@@ -110,12 +118,12 @@ footer .contact {
   padding-right: 1em;
   font-size: 1.1em;
 }
-/* line 105, ../scss/_custom.scss */
+/* line 108, ../scss/_custom.scss */
 .sidebar dt a {
   color: #6fc818;
   border-bottom: 0.2em solid #6fc818;
 }
-/* line 109, ../scss/_custom.scss */
+/* line 112, ../scss/_custom.scss */
 .sidebar dd {
   padding-bottom: 1.2em;
 }
