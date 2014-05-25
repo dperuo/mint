@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "q": "What does Mint Studio do?",
+      "a": "We partner with companies to solve problems and help build a better future. We want to build meaningful work that lasts."
+    },
+    {
+      "q": "What does Mint Ventures do?",
+      "a": "We invent, test, build and take our own products to market. We're commited to creating self-sustaining businesses."
+    },
+    {
+      "q": "What does Mint Community do?",
+      "a": "When passionate people get together, brilliant things can happen. Our events and initiatives are aimed at helping make those connections, and providing a space for inquisitive people to share and make things together."
+    },
+    {
+      "q": "Who can I contact in the US?",
+      "a": "Speak to Christopher."
+    },
+    {
+      "q": "Who can I contact in the UK?",
+      "a": "Say hello to Noam."
+    }
+  ]
+}
