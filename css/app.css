@@ -8,44 +8,58 @@
  *  
  */
 @import url(http://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300,700);
-/* line 3, ../scss/_custom.scss */
+/* line 6, ../scss/_custom.scss */
 header {
   border-top: 10px solid #6fc818;
   padding-top: 4em;
 }
-/* line 6, ../scss/_custom.scss */
+/* line 9, ../scss/_custom.scss */
 header .row:last-child {
   border-bottom: 1px solid #ccc;
+  margin-bottom: 3em;
 }
-/* line 10, ../scss/_custom.scss */
+/* line 13, ../scss/_custom.scss */
 header img {
   max-width: 200px;
 }
-/* line 13, ../scss/_custom.scss */
+/* line 16, ../scss/_custom.scss */
 header ul {
   font-weight: bold;
 }
-/* line 15, ../scss/_custom.scss */
+/* line 18, ../scss/_custom.scss */
 header ul a {
   color: #333;
 }
-/* line 17, ../scss/_custom.scss */
+/* line 20, ../scss/_custom.scss */
 header ul a:before {
   content: '\2022';
   color: #333;
   position: relative;
   left: -0.6em;
 }
-/* line 25, ../scss/_custom.scss */
+/* line 28, ../scss/_custom.scss */
 header ul .first-link:before {
   content: '';
 }
-/* line 29, ../scss/_custom.scss */
+/* line 32, ../scss/_custom.scss */
 header ul .active {
   color: #6fc818;
 }
 
-/* line 35, ../scss/_custom.scss */
+/* line 43, ../scss/_custom.scss */
+main-content h1 {
+  padding-bottom: 1em;
+}
+/* line 46, ../scss/_custom.scss */
+main-content p {
+  margin-bottom: 1.2em;
+}
+/* line 49, ../scss/_custom.scss */
+main-content .padding-right-11 {
+  padding-right: 1.1em;
+}
+
+/* line 58, ../scss/_custom.scss */
 footer {
   padding-top: 2em;
   background: #e8e8e8;
@@ -53,23 +67,29 @@ footer {
   font-size: 1.25em;
   line-height: 1.5em;
 }
-/* line 41, ../scss/_custom.scss */
+/* line 64, ../scss/_custom.scss */
 footer a {
   color: #6fc818;
-  border-bottom: 0.2em solid #6fc818;
+  border-bottom: 0.15em solid #6fc818;
+  font-size: 1.1em;
+  padding-bottom: 0.1em;
 }
-/* line 45, ../scss/_custom.scss */
+/* line 70, ../scss/_custom.scss */
 footer .row {
-  padding-bottom: 1em;
+  padding-bottom: 1.7em;
+}
+/* line 73, ../scss/_custom.scss */
+footer .contact {
+  font-size: 1.1em;
 }
 
-/* line 52, ../scss/_custom.scss */
+/* line 82, ../scss/_custom.scss */
 .sidebar {
   border: 0.2em solid #6fc818;
-  width: 300px;
+  max-width: 300px;
   border-radius: 1em;
 }
-/* line 56, ../scss/_custom.scss */
+/* line 86, ../scss/_custom.scss */
 .sidebar h6 {
   display: block;
   width: 100%;
@@ -82,7 +102,7 @@ footer .row {
   font-size: 1.2em;
   border-radius: 0.5em 0.5em 0 0;
 }
-/* line 68, ../scss/_custom.scss */
+/* line 98, ../scss/_custom.scss */
 .sidebar dl {
   margin: 0;
   padding-top: 1em;
@@ -90,12 +110,12 @@ footer .row {
   padding-right: 1em;
   font-size: 1.1em;
 }
-/* line 75, ../scss/_custom.scss */
+/* line 105, ../scss/_custom.scss */
 .sidebar dt a {
   color: #6fc818;
   border-bottom: 0.2em solid #6fc818;
 }
-/* line 79, ../scss/_custom.scss */
+/* line 109, ../scss/_custom.scss */
 .sidebar dd {
   padding-bottom: 1.2em;
 }
@@ -6799,14 +6819,14 @@ a img {
 p {
   font-family: inherit;
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 1.4rem;
   line-height: 1.6;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0;
   text-rendering: optimizeLegibility;
 }
 /* line 219, ../bower_components/foundation/scss/foundation/components/_type.scss */
 p.lead {
-  font-size: 1.21875rem;
+  font-size: 1.61875rem;
   line-height: 1.6;
 }
 /* line 221, ../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -6819,8 +6839,8 @@ p aside {
 /* Default header styles */
 /* line 229, ../bower_components/foundation/scss/foundation/components/_type.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: normal;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   font-style: normal;
   color: #222222;
   text-rendering: optimizeLegibility;
@@ -6837,7 +6857,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 
 /* line 246, ../bower_components/foundation/scss/foundation/components/_type.scss */
 h1 {
-  font-size: 2.125rem;
+  font-size: 1.25rem;
 }
 
 /* line 247, ../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -6916,9 +6936,9 @@ code {
 ul,
 ol,
 dl {
-  font-size: 1rem;
+  font-size: 1.4rem;
   line-height: 1.6;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0;
   list-style-position: outside;
   font-family: inherit;
 }
@@ -7012,7 +7032,7 @@ abbr {
 /* Blockquotes */
 /* line 369, ../bower_components/foundation/scss/foundation/components/_type.scss */
 blockquote {
-  margin: 0 0 1.25rem;
+  margin: 0 0 0;
   padding: 0.5625rem 1.25rem 0 1.1875rem;
   border-left: 1px solid #dddddd;
 }
@@ -7079,7 +7099,7 @@ blockquote p {
 
   /* line 426, ../bower_components/foundation/scss/foundation/components/_type.scss */
   h1 {
-    font-size: 2.75rem;
+    font-size: 1.875rem;
   }
 
   /* line 427, ../bower_components/foundation/scss/foundation/components/_type.scss */
