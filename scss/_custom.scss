@@ -1,5 +1,40 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300,700);
 
+header {
+  border-top: 10px solid #6fc818;
+  padding-top: 4em;
+  .row:last-child {
+    border-bottom: 1px solid #ccc;
+  }
+  img {
+    max-width: 200px;
+  }
+  ul {
+    font-weight: bold;
+    a {
+      color: #333;
+      &:before {
+        content: '\2022'; // content: '•';
+        color: #333;
+        position: relative;
+        left: -0.6em;
+      }
+    }
+    .first-link {
+      &:before {
+        content: '';
+      }
+    }
+    .active {
+      color: #6fc818;
+    }
+  }
+}
+
+
+
+
+
 footer {
   padding-top: 2em;
   background: #e8e8e8;
@@ -17,9 +52,11 @@ footer {
 
 
 
+
+
 .sidebar {
   border: 0.2em solid #6fc818;
-  width: 100%;
+  width: 300px;
   border-radius: 1em;
   h6 {
     display: block;

@@ -9,6 +9,43 @@
  */
 @import url(http://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300,700);
 /* line 3, ../scss/_custom.scss */
+header {
+  border-top: 10px solid #6fc818;
+  padding-top: 4em;
+}
+/* line 6, ../scss/_custom.scss */
+header .row:last-child {
+  border-bottom: 1px solid #ccc;
+}
+/* line 10, ../scss/_custom.scss */
+header img {
+  max-width: 200px;
+}
+/* line 13, ../scss/_custom.scss */
+header ul {
+  font-weight: bold;
+}
+/* line 15, ../scss/_custom.scss */
+header ul a {
+  color: #333;
+}
+/* line 17, ../scss/_custom.scss */
+header ul a:before {
+  content: '\2022';
+  color: #333;
+  position: relative;
+  left: -0.6em;
+}
+/* line 25, ../scss/_custom.scss */
+header ul .first-link:before {
+  content: '';
+}
+/* line 29, ../scss/_custom.scss */
+header ul .active {
+  color: #6fc818;
+}
+
+/* line 35, ../scss/_custom.scss */
 footer {
   padding-top: 2em;
   background: #e8e8e8;
@@ -16,23 +53,23 @@ footer {
   font-size: 1.25em;
   line-height: 1.5em;
 }
-/* line 9, ../scss/_custom.scss */
+/* line 41, ../scss/_custom.scss */
 footer a {
   color: #6fc818;
   border-bottom: 0.2em solid #6fc818;
 }
-/* line 13, ../scss/_custom.scss */
+/* line 45, ../scss/_custom.scss */
 footer .row {
   padding-bottom: 1em;
 }
 
-/* line 20, ../scss/_custom.scss */
+/* line 52, ../scss/_custom.scss */
 .sidebar {
   border: 0.2em solid #6fc818;
-  width: 100%;
+  width: 300px;
   border-radius: 1em;
 }
-/* line 24, ../scss/_custom.scss */
+/* line 56, ../scss/_custom.scss */
 .sidebar h6 {
   display: block;
   width: 100%;
@@ -45,7 +82,7 @@ footer .row {
   font-size: 1.2em;
   border-radius: 0.5em 0.5em 0 0;
 }
-/* line 36, ../scss/_custom.scss */
+/* line 68, ../scss/_custom.scss */
 .sidebar dl {
   margin: 0;
   padding-top: 1em;
@@ -53,12 +90,12 @@ footer .row {
   padding-right: 1em;
   font-size: 1.1em;
 }
-/* line 43, ../scss/_custom.scss */
+/* line 75, ../scss/_custom.scss */
 .sidebar dt a {
   color: #6fc818;
   border-bottom: 0.2em solid #6fc818;
 }
-/* line 47, ../scss/_custom.scss */
+/* line 79, ../scss/_custom.scss */
 .sidebar dd {
   padding-bottom: 1.2em;
 }
@@ -222,7 +259,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 75rem;
+  max-width: 60rem;
   *zoom: 1;
 }
 /* line 116, ../bower_components/foundation/scss/foundation/components/_global.scss */
@@ -6298,7 +6335,7 @@ meta.foundation-mq-topbar {
 
   /* line 452, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .contain-to-grid .top-bar {
-    max-width: 75rem;
+    max-width: 60rem;
     margin: 0 auto;
     margin-bottom: 0;
   }
