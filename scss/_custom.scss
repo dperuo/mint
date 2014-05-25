@@ -1,0 +1,39 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300,700);
+
+.sidebar {
+  border: 0.2em solid #6fc818;
+  width: 100%;
+  border-radius: 1em;
+  h6 {
+    display: block;
+    width: 100%;
+    height: 2.5em;
+    line-height: 2.2em;
+    background: #6fc818;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 0.5em 0.5em 0 0;
+  }
+  dl {
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 1.1em;
+  }
+  dt a {
+    color: #6fc818;
+    border-bottom: 0.2em solid #6fc818;
+  }
+  dd {
+    padding-bottom: 1em;
+  }
+}
+
+
+
+
+// --- HELPER CLASSES --- //
+
+.width-110 { width: 110%; }
