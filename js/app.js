@@ -1,19 +1,14 @@
-// Foundation JavaScript
-// Documentation can be found at: http://foundation.zurb.com/docs
-$(document).foundation();
-
 $(document).ready(function(){
   
-  var $faq = $('#faq'),
-      $allFAQ = [];
-  
+  var $faq = $('#faq')
+  $faq.append('<dl id="faqList" class="accordion" data-accordion></dl>')
   $.getJSON('js/faq.json', function(data){
-    
     $(data.questions).each(function(i, value){
-      $allFAQ.push('<p>' + value.q + '<br>' + value.a + '</p>');
-    });
-    
-    $faq.html($allFAQ);
-        
-  });
-});
+      $('#faqList').append('<dd><a href="#panel' + (i+1) + '">' + value.q + '</a><div id="panel' + (i+1) + '" class="content">' + value.a + '</div></dd>')
+    })
+  })
+
+  $(document).foundation()
+
+})
+
