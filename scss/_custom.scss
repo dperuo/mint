@@ -45,11 +45,55 @@ main-content {
   }
   p {
     margin-bottom: 1.2em;
-  }
-  .padding-right-11 {
-    padding-right: 1.1em;
+    &:last-child {
+      margin-bottom: 7em;
+    }
   }
 }
+
+
+
+
+
+#faq {
+  h3 {
+    color: #ffaa45;
+    letter-spacing: 0.01em;
+  }
+  a {
+    background-color: #e8e8e8;
+  }
+  dd {
+    padding-bottom: 0.6em;
+    &:last-child {
+      padding-bottom: 2em;
+    }
+    div {
+      padding: 1em;
+      border: 2px solid #e8e8e8;
+    }
+  }
+  .plus,
+  .minus {
+    &:after {
+      content: '';
+      display: inline-block;
+      float: right;
+      width: 29px;
+      height: 29px;
+      border-radius: 29px;
+      box-shadow: 0 3px 0 #5cb109;
+    }
+  }
+  .plus:after {
+    background: #6fc818 url(../img/plus.svg) center center no-repeat;
+  }
+  .minus:after {
+    background: #6fc818 url(../img/minus.svg) center center no-repeat;
+  }
+}
+ 
+  
 
 
 

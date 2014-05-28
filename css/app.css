@@ -58,12 +58,54 @@ main-content h1 {
 main-content p {
   margin-bottom: 1.2em;
 }
-/* line 49, ../scss/_custom.scss */
-main-content .padding-right-11 {
-  padding-right: 1.1em;
+/* line 48, ../scss/_custom.scss */
+main-content p:last-child {
+  margin-bottom: 7em;
 }
 
-/* line 58, ../scss/_custom.scss */
+/* line 59, ../scss/_custom.scss */
+#faq h3 {
+  color: #ffaa45;
+  letter-spacing: 0.01em;
+}
+/* line 63, ../scss/_custom.scss */
+#faq a {
+  background-color: #e8e8e8;
+}
+/* line 66, ../scss/_custom.scss */
+#faq dd {
+  padding-bottom: 0.6em;
+}
+/* line 68, ../scss/_custom.scss */
+#faq dd:last-child {
+  padding-bottom: 2em;
+}
+/* line 71, ../scss/_custom.scss */
+#faq dd div {
+  padding: 1em;
+  border: 2px solid #e8e8e8;
+}
+/* line 78, ../scss/_custom.scss */
+#faq .plus:after,
+#faq .minus:after {
+  content: '';
+  display: inline-block;
+  float: right;
+  width: 29px;
+  height: 29px;
+  border-radius: 29px;
+  box-shadow: 0 3px 0 #5cb109;
+}
+/* line 88, ../scss/_custom.scss */
+#faq .plus:after {
+  background: #6fc818 url(../img/plus.svg) center center no-repeat;
+}
+/* line 91, ../scss/_custom.scss */
+#faq .minus:after {
+  background: #6fc818 url(../img/minus.svg) center center no-repeat;
+}
+
+/* line 102, ../scss/_custom.scss */
 footer {
   padding-top: 2em;
   background: #e8e8e8;
@@ -71,33 +113,33 @@ footer {
   font-size: 1.25em;
   line-height: 1.5em;
 }
-/* line 64, ../scss/_custom.scss */
+/* line 108, ../scss/_custom.scss */
 footer a {
   color: #6fc818;
   border-bottom: 0.15em solid #6fc818;
   font-size: 1.1em;
   padding-bottom: 0.1em;
 }
-/* line 69, ../scss/_custom.scss */
+/* line 113, ../scss/_custom.scss */
 footer a:hover {
   color: #6fc818;
 }
-/* line 73, ../scss/_custom.scss */
+/* line 117, ../scss/_custom.scss */
 footer .row {
   padding-bottom: 1.7em;
 }
-/* line 76, ../scss/_custom.scss */
+/* line 120, ../scss/_custom.scss */
 footer .contact {
   font-size: 1.1em;
 }
 
-/* line 85, ../scss/_custom.scss */
+/* line 129, ../scss/_custom.scss */
 .sidebar {
   border: 0.2em solid #6fc818;
   max-width: 300px;
   border-radius: 1em;
 }
-/* line 89, ../scss/_custom.scss */
+/* line 133, ../scss/_custom.scss */
 .sidebar h6 {
   display: block;
   width: 100%;
@@ -110,7 +152,7 @@ footer .contact {
   font-size: 1.2em;
   border-radius: 0.5em 0.5em 0 0;
 }
-/* line 101, ../scss/_custom.scss */
+/* line 145, ../scss/_custom.scss */
 .sidebar dl {
   margin: 0;
   padding-top: 1em;
@@ -118,12 +160,12 @@ footer .contact {
   padding-right: 1em;
   font-size: 1.1em;
 }
-/* line 108, ../scss/_custom.scss */
+/* line 152, ../scss/_custom.scss */
 .sidebar dt a {
   color: #6fc818;
   border-bottom: 0.2em solid #6fc818;
 }
-/* line 112, ../scss/_custom.scss */
+/* line 156, ../scss/_custom.scss */
 .sidebar dd {
   padding-bottom: 1.2em;
 }
