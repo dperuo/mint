@@ -45,9 +45,6 @@ main-content {
   }
   p {
     margin-bottom: 1.2em;
-    &:last-child {
-      margin-bottom: 7em;
-    }
   }
 }
 
@@ -100,6 +97,7 @@ main-content {
 
 
 footer {
+  margin-top: 7em;
   padding-top: 2em;
   background: #e8e8e8;
   height: 13em;
