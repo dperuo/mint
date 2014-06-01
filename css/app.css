@@ -69,10 +69,12 @@ main-content p {
 }
 /* line 68, ../scss/_custom.scss */
 #faq dd div {
+  font-size: 0.8em;
+  line-height: 1.4;
   padding: 1em;
   border: 2px solid #e8e8e8;
 }
-/* line 75, ../scss/_custom.scss */
+/* line 77, ../scss/_custom.scss */
 #faq .plus:after,
 #faq .minus:after {
   content: '';
@@ -83,11 +85,11 @@ main-content p {
   border-radius: 29px;
   box-shadow: 0 3px 0 #5cb109;
 }
-/* line 85, ../scss/_custom.scss */
+/* line 87, ../scss/_custom.scss */
 #faq .plus:after {
   background: #6fc818 url(../img/plus.svg) center center no-repeat;
 }
-/* line 88, ../scss/_custom.scss */
+/* line 90, ../scss/_custom.scss */
 #faq .minus:after {
   background: #6fc818 url(../img/minus.svg) center center no-repeat;
 }
