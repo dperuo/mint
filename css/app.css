@@ -1,82 +1,85 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300,700);
-/* line 3, ../scss/_custom.scss */
+/* line 7, ../scss/_custom.scss */
 header {
   border-top: 10px solid #6fc818;
   padding-top: 4em;
 }
-/* line 6, ../scss/_custom.scss */
+/* line 10, ../scss/_custom.scss */
 header .row:last-child {
   border-bottom: 1px solid #ccc;
   margin-bottom: 3em;
 }
-/* line 10, ../scss/_custom.scss */
-header img {
-  max-width: 200px;
-}
-/* line 13, ../scss/_custom.scss */
-header ul {
+
+/* line 16, ../scss/_custom.scss */
+.header__nav {
   font-weight: bold;
 }
-/* line 15, ../scss/_custom.scss */
-header ul a {
+/* line 18, ../scss/_custom.scss */
+.header__nav a {
   color: #333;
 }
-/* line 17, ../scss/_custom.scss */
-header ul a:before {
+/* line 20, ../scss/_custom.scss */
+.header__nav a:before {
   content: '\2022';
   color: #333;
   position: relative;
   left: -0.6em;
 }
-/* line 23, ../scss/_custom.scss */
-header ul a:hover {
-  color: #333;
+/* line 26, ../scss/_custom.scss */
+.header__nav a:hover {
+  color: #6fc818;
 }
 /* line 28, ../scss/_custom.scss */
-header ul .first-link:before {
+.header__nav li {
+  font-size: 0.7em;
+}
+/* line 31, ../scss/_custom.scss */
+.header__nav li:first-child a:before {
   content: '';
 }
-/* line 32, ../scss/_custom.scss */
-header ul .active {
+/* line 36, ../scss/_custom.scss */
+.header__nav .active {
   color: #6fc818;
 }
 
-/* line 43, ../scss/_custom.scss */
-main-content h1 {
-  padding-bottom: 1em;
-}
-/* line 46, ../scss/_custom.scss */
-main-content p {
-  margin-bottom: 1.2em;
+/* line 41, ../scss/_custom.scss */
+.logo {
+  max-width: 200px;
 }
 
 /* line 56, ../scss/_custom.scss */
-#faq h3 {
-  color: #ffaa45;
-  letter-spacing: 0.01em;
+main-content h1 {
+  padding-bottom: 1em;
 }
+/* line 57, ../scss/_custom.scss */
+main-content p {
+  padding-bottom: 1.2em;
+}
+
 /* line 60, ../scss/_custom.scss */
-#faq a {
-  background-color: #e8e8e8;
+.main-content--max-width {
+  max-width: 39.375em;
 }
-/* line 63, ../scss/_custom.scss */
-#faq dd {
+
+/* line 75, ../scss/_custom.scss */
+#faq {
+  padding-top: 1.5em;
+  padding-bottom: 2.75em;
+}
+
+/* line 81, ../scss/_custom.scss */
+#faqList dd {
   padding-bottom: 0.6em;
 }
-/* line 65, ../scss/_custom.scss */
-#faq dd:last-child {
-  padding-bottom: 2em;
+/* line 84, ../scss/_custom.scss */
+#faqList h3 {
+  padding: 0 0.25em;
+  font-size: 1.9em;
+  line-height: 1.2;
+  color: #ffaa45;
 }
-/* line 68, ../scss/_custom.scss */
-#faq dd div {
-  font-size: 0.8em;
-  line-height: 1.4;
-  padding: 1em;
-  border: 2px solid #e8e8e8;
-}
-/* line 77, ../scss/_custom.scss */
-#faq .plus:after,
-#faq .minus:after {
+/* line 89, ../scss/_custom.scss */
+#faqList h3:after {
   content: '';
   display: inline-block;
   float: right;
@@ -84,80 +87,83 @@ main-content p {
   height: 29px;
   border-radius: 29px;
   box-shadow: 0 3px 0 #5cb109;
-}
-/* line 87, ../scss/_custom.scss */
-#faq .plus:after {
   background: #6fc818 url(../img/plus.svg) center center no-repeat;
 }
-/* line 90, ../scss/_custom.scss */
-#faq .minus:after {
+/* line 101, ../scss/_custom.scss */
+#faqList dd[class='active'] h3:after {
   background: #6fc818 url(../img/minus.svg) center center no-repeat;
 }
+/* line 105, ../scss/_custom.scss */
+#faqList div {
+  font-size: 0.8em;
+  line-height: 1.4;
+  padding: 1em;
+  border: 2px solid #e8e8e8;
+}
 
-/* line 99, ../scss/_custom.scss */
+/* line 124, ../scss/_custom.scss */
 footer {
   margin-top: 7em;
   padding-top: 2em;
   background: #e8e8e8;
   height: 13em;
-  font-size: 1.25em;
-  line-height: 1.5em;
+  font-size: 1.5rem;
+  line-height: 1.4em;
 }
-/* line 106, ../scss/_custom.scss */
+/* line 131, ../scss/_custom.scss */
 footer a {
+  padding-bottom: 0.3em;
   color: #6fc818;
-  border-bottom: 0.15em solid #6fc818;
-  font-size: 1.1em;
-  padding-bottom: 0.1em;
+  border-bottom: 3px solid #6fc818;
 }
-/* line 111, ../scss/_custom.scss */
+/* line 135, ../scss/_custom.scss */
 footer a:hover {
   color: #6fc818;
 }
-/* line 115, ../scss/_custom.scss */
+/* line 139, ../scss/_custom.scss */
 footer .row {
-  padding-bottom: 1.7em;
-}
-/* line 118, ../scss/_custom.scss */
-footer .contact {
-  font-size: 1.1em;
+  padding-bottom: 1.5em;
 }
 
-/* line 127, ../scss/_custom.scss */
+/* line 155, ../scss/_custom.scss */
 .sidebar {
-  border: 0.2em solid #6fc818;
   max-width: 300px;
+  border: 0.2em solid #6fc818;
   border-radius: 1em;
 }
-/* line 131, ../scss/_custom.scss */
+/* line 159, ../scss/_custom.scss */
 .sidebar h6 {
   display: block;
   width: 100%;
-  height: 2.5em;
-  line-height: 2.2em;
   background: #6fc818;
-  color: white;
   text-align: center;
-  font-weight: bold;
   font-size: 1.2em;
+  line-height: 2.5em;
+  color: white;
   border-radius: 0.5em 0.5em 0 0;
 }
-/* line 143, ../scss/_custom.scss */
+/* line 169, ../scss/_custom.scss */
 .sidebar dl {
   margin: 0;
-  padding-top: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding: 0.8em 1em 1em;
   font-size: 1.1em;
 }
-/* line 150, ../scss/_custom.scss */
+/* line 174, ../scss/_custom.scss */
 .sidebar dt a {
   color: #6fc818;
-  border-bottom: 0.2em solid #6fc818;
+  border-bottom: 3px solid #6fc818;
 }
-/* line 154, ../scss/_custom.scss */
+/* line 177, ../scss/_custom.scss */
+.sidebar dt a:hover {
+  color: #6fc818;
+}
+/* line 181, ../scss/_custom.scss */
 .sidebar dd {
   padding-bottom: 1.2em;
+}
+/* line 183, ../scss/_custom.scss */
+.sidebar dd:last-child {
+  padding-bottom: 0.2em;
 }
 
 /* line 260, ../bower_components/foundation/scss/foundation/components/_global.scss */

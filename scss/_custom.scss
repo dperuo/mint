@@ -1,5 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300,700);
 
+
+
+// ---------- HEADER ---------- //
+
 header {
   border-top: 10px solid #6fc818;
   padding-top: 4em;
@@ -7,73 +11,81 @@ header {
     border-bottom: 1px solid #ccc;
     margin-bottom: 3em;
   }
-  img {
-    max-width: 200px;
-  }
-  ul {
-    font-weight: bold;
-    a {
+}
+
+.header__nav {
+  font-weight: bold;
+  a {
+    color: #333;
+    &:before {
+      content: '\2022'; // content: '•';
       color: #333;
-      &:before {
-        content: '\2022'; // content: '•';
-        color: #333;
-        position: relative;
-        left: -0.6em;
-      }
-      &:hover {
-        color: #333;
-      }
+      position: relative;
+      left: -0.6em;
     }
-    .first-link {
-      &:before {
+    &:hover { color: #6fc818; }
+  }
+  li {
+    font-size: 0.7em;
+    &:first-child {
+      a:before {
         content: '';
       }
     }
-    .active {
-      color: #6fc818;
-    }
   }
+  .active {
+    color: #6fc818;
+  }
+}
+
+.logo {
+  max-width: 200px;
 }
 
 
 
 
+
+
+
+
+
+// ---------- MAIN CONTENT ---------- //
 
 main-content {
-  h1 {
-    padding-bottom: 1em;
-  }
-  p {
-    margin-bottom: 1.2em;
-  }
+  h1 { padding-bottom: 1em;   }
+  p  { padding-bottom: 1.2em; }
+}
+
+.main-content--max-width {
+  max-width: 39.375em;
 }
 
 
 
 
 
+
+
+
+
+
+// ---------- FAQ ACCORDION ---------- //
+
 #faq {
-  h3 {
-    color: #ffaa45;
-    letter-spacing: 0.01em;
-  }
-  a {
-    background-color: #e8e8e8;
-  }
+  padding-top: 1.5em;
+  padding-bottom: 2.75em;
+}
+
+#faqList {
   dd {
     padding-bottom: 0.6em;
-    &:last-child {
-      padding-bottom: 2em;
-    }
-    div {
-      font-size: 0.8em;
-      line-height: 1.4;
-      padding: 1em;
-      border: 2px solid #e8e8e8;
-    }
   }
-  .plus,
-  .minus {
+  h3 {
+    padding: 0 0.25em;
+    font-size: 1.9em;
+    line-height: 1.2;
+    color: #ffaa45;
     &:after {
       content: '';
       display: inline-block;
@@ -82,41 +94,50 @@ main-content {
       height: 29px;
       border-radius: 29px;
       box-shadow: 0 3px 0 #5cb109;
+      background: #6fc818 url(../img/plus.svg) center center no-repeat;
     }
   }
-  .plus:after {
-    background: #6fc818 url(../img/plus.svg) center center no-repeat;
+  dd[class='active'] {
+    h3:after {
+      background: #6fc818 url(../img/minus.svg) center center no-repeat;
+    }
   }
-  .minus:after {
-    background: #6fc818 url(../img/minus.svg) center center no-repeat;
+  div {
+    font-size: 0.8em;
+    line-height: 1.4;
+    padding: 1em;
+    border: 2px solid #e8e8e8;
   }
 }
 
 
 
 
+
+
+
+
+
+
+// ---------- FOOTER ---------- //
 
 footer {
   margin-top: 7em;
   padding-top: 2em;
   background: #e8e8e8;
   height: 13em;
-  font-size: 1.25em;
-  line-height: 1.5em;
+  font-size: 1.5rem;
+  line-height: 1.4em;
   a {
+    padding-bottom: 0.3em;
     color: #6fc818;
-    border-bottom: 0.15em solid #6fc818;
-    font-size: 1.1em;
-    padding-bottom: 0.1em;
+    border-bottom: 3px solid #6fc818;
     &:hover {
       color: #6fc818;
     }
   }
   .row {
-    padding-bottom: 1.7em;
-  }
-  .contact {
-    font-size: 1.1em;
+    padding-bottom: 1.5em;
   }
 }
 
@@ -124,36 +145,43 @@ footer {
 
 
 
+
+
+
+
+
+// ---------- SIDEBAR ---------- //
+
 .sidebar {
-  border: 0.2em solid #6fc818;
   max-width: 300px;
+  border: 0.2em solid #6fc818;
   border-radius: 1em;
   h6 {
     display: block;
     width: 100%;
-    height: 2.5em;
-    line-height: 2.2em;
     background: #6fc818;
-    color: white;
     text-align: center;
-    font-weight: bold;
     font-size: 1.2em;
+    line-height: 2.5em;
+    color: white;
     border-radius: 0.5em 0.5em 0 0;
   }
   dl {
     margin: 0;
-    padding-top: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 0.8em 1em 1em;
     font-size: 1.1em;
   }
   dt a {
     color: #6fc818;
-    border-bottom: 0.2em solid #6fc818;
+    border-bottom: 3px solid #6fc818;
+    &:hover {
+      color: #6fc818;
+    }
   }
   dd {
     padding-bottom: 1.2em;
+    &:last-child {
+      padding-bottom: 0.2em;
+    }
   }
 }
-
-

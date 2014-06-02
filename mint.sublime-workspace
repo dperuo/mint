@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"faq",
+				"faqList"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
 				"fa",
 				"faqList"
 			],
@@ -19,7 +31,7 @@
 			"file": "scss/_custom.scss",
 			"settings":
 			{
-				"buffer_size": 2376,
+				"buffer_size": 2564,
 				"line_ending": "Unix"
 			}
 		},
@@ -35,16 +47,15 @@
 			"file": "js/app.coffee",
 			"settings":
 			{
-				"buffer_size": 385,
-				"line_ending": "Unix",
-				"name": "app.coffee"
+				"buffer_size": 407,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "accordion.html",
+			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 819,
+				"buffer_size": 2956,
 				"line_ending": "Unix"
 			}
 		}
@@ -93,10 +104,15 @@
 	},
 	"file_history":
 	[
-		"/Users/derekperuo/Dropbox/Public/sites/mint/js/test.js",
+		"/Users/derekperuo/Dropbox/Public/sites/mint/index.html",
 		"/Users/derekperuo/Dropbox/Public/sites/mint/css/app.css",
-		"/Users/derekperuo/Dropbox/Public/sites/mint/accordion.html",
+		"/Users/derekperuo/Dropbox/Public/sites/mint/scss/_custom.scss",
+		"/Users/derekperuo/Dropbox/Public/sites/mint/scss/_settings.scss",
 		"/Users/derekperuo/Dropbox/Public/sites/mint/js/app.js",
+		"/Users/derekperuo/Dropbox/Public/sites/mint/js/app.coffee",
+		"/Users/derekperuo/Dropbox/Public/sites/mint/js/faq.json",
+		"/Users/derekperuo/Dropbox/Public/sites/mint/accordion.html",
+		"/Users/derekperuo/Dropbox/Public/sites/mint/js/test.js",
 		"/Users/derekperuo/Dropbox/Public/sites/mint/js/app.old.js",
 		"/Users/derekperuo/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/Users/derekperuo/Library/Application Support/Sublime Text 2/Packages/User/Plain text.sublime-settings",
@@ -130,6 +146,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"small-",
 			"    $(",
 			"29px",
 			"sex",
@@ -154,7 +171,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -162,15 +179,15 @@
 					"file": "scss/_custom.scss",
 					"settings":
 					{
-						"buffer_size": 2376,
+						"buffer_size": 2564,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								977,
-								977
+								0,
+								0
 							]
 						],
 						"settings":
@@ -197,8 +214,8 @@
 						"selection":
 						[
 							[
-								195,
-								195
+								0,
+								0
 							]
 						],
 						"settings":
@@ -206,7 +223,7 @@
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 824.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -216,20 +233,19 @@
 					"file": "js/app.coffee",
 					"settings":
 					{
-						"buffer_size": 385,
+						"buffer_size": 407,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								385,
-								385
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"auto_name": "app.coffee",
 							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -246,18 +262,18 @@
 			[
 				{
 					"buffer": 3,
-					"file": "accordion.html",
+					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 819,
+						"buffer_size": 2956,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								329,
-								329
+								0,
+								0
 							]
 						],
 						"settings":
@@ -267,7 +283,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 163.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
