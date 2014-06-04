@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"ti",
+				"tertiary-color"
+			],
+			[
 				"si",
 				"sidebar__nav-link"
 			],
@@ -55,7 +59,7 @@
 			"file": "scss/_custom.scss",
 			"settings":
 			{
-				"buffer_size": 3033,
+				"buffer_size": 3034,
 				"line_ending": "Unix"
 			}
 		},
@@ -71,15 +75,7 @@
 			"file": "js/app.coffee",
 			"settings":
 			{
-				"buffer_size": 407,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "scss/app.scss",
-			"settings":
-			{
-				"buffer_size": 1508,
+				"buffer_size": 447,
 				"line_ending": "Unix"
 			}
 		},
@@ -137,8 +133,8 @@
 	"file_history":
 	[
 		"/Users/derekperuo/Dropbox/Public/sites/mint/scss/app.scss",
-		"/Users/derekperuo/Dropbox/Public/sites/mint/index.html",
 		"/Users/derekperuo/Dropbox/Public/sites/mint/css/app.css",
+		"/Users/derekperuo/Dropbox/Public/sites/mint/index.html",
 		"/Users/derekperuo/Dropbox/Public/sites/mint/scss/_custom.scss",
 		"/Users/derekperuo/Dropbox/Public/sites/mint/scss/_settings.scss",
 		"/Users/derekperuo/Dropbox/Public/sites/mint/js/app.js",
@@ -179,6 +175,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"-green",
 			"#$prim",
 			"6fc818",
 			"header__nav-link",
@@ -212,7 +209,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -220,15 +217,15 @@
 					"file": "scss/_custom.scss",
 					"settings":
 					{
-						"buffer_size": 3033,
+						"buffer_size": 3034,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1251,
-								1251
+								2053,
+								2053
 							]
 						],
 						"settings":
@@ -239,7 +236,7 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1707.0,
+						"translation.y": 2166.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -265,7 +262,7 @@
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2296.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -275,46 +272,20 @@
 					"file": "js/app.coffee",
 					"settings":
 					{
-						"buffer_size": 407,
+						"buffer_size": 447,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								26,
-								26
+								447,
+								447
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "scss/app.scss",
-					"settings":
-					{
-						"buffer_size": 1508,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -329,7 +300,7 @@
 			"sheets":
 			[
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "index.html",
 					"settings":
 					{
@@ -352,7 +323,7 @@
 							"word_wrap": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 374.0,
+						"translation.y": 336.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

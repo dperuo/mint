@@ -8,7 +8,7 @@
       var $faqList;
       $faqList = $('#faqList');
       return $(data.questions).each(function(i, value) {
-        return $faqList.append('<dd class=""><a href="#panel' + (i + 1) + '"><h3>' + value.q + '</h3></a><div id="panel' + (i + 1) + '" class="content">' + value.a + '</div></dd>');
+        return $faqList.append('<dd class="faq__item"><a href="#panel' + (i + 1) + '"><h3 class="faq__heading">' + value.q + '</h3></a><div id="panel' + (i + 1) + '" class="faq__body content">' + value.a + '</div></dd>');
       });
     });
     return $(document).foundation();
