@@ -1,41 +1,59 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300,700);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+
+
+
+
+
+// ---------- GLOBAL VARIABLES ---------- //
+
+$primary-green:   #6fc818;
+$secondary-green: #5cb109;
+
+
+
+
+
+
+
 
 
 
 // ---------- HEADER ---------- //
 
-header {
-  border-top: 10px solid #6fc818;
+.header {
+  border-top: 10px solid $primary-green;
   padding-top: 4em;
-  .row:last-child {
+}
+
+.header__row:last-of-type {
     border-bottom: 1px solid #ccc;
     margin-bottom: 3em;
+}
+
+.header__nav-item {
+  &:first-child {
+    .header__nav-link:before {
+      content: '';
+    }
   }
 }
 
-.header__nav {
+.header__nav-link {
+  color: #333;
+  font-size: 0.7em;
   font-weight: bold;
-  a {
+  &:before {
+    content: '\2022'; // content: '•';
     color: #333;
-    &:before {
-      content: '\2022'; // content: '•';
-      color: #333;
-      position: relative;
-      left: -0.6em;
-    }
-    &:hover { color: #6fc818; }
+    position: relative;
+    left: -0.6em;
   }
-  li {
-    font-size: 0.7em;
-    &:first-child {
-      a:before {
-        content: '';
-      }
-    }
-  }
-  .active {
-    color: #6fc818;
-  }
+}
+
+.header__nav-link:hover,
+.header__nav-link--active {
+  color: $primary-green;
 }
 
 .logo {
@@ -52,15 +70,20 @@ header {
 
 // ---------- MAIN CONTENT ---------- //
 
-main-content {
-  h1 { padding-bottom: 1em;   }
-  p  { padding-bottom: 1.2em; }
+.main-content__heading {
+  padding-bottom: 1em;
+  font-size: 2em;
+  font-weight: normal;
+}
+
+.main-content__body {
+  padding-bottom: 1.2em;
+  font-size: 1.3rem;
 }
 
 .main-content--max-width {
   max-width: 39.375em;
 }
-
 
 
 
@@ -93,13 +116,13 @@ main-content {
       width: 29px;
       height: 29px;
       border-radius: 29px;
-      box-shadow: 0 3px 0 #5cb109;
-      background: #6fc818 url(../img/plus.svg) center center no-repeat;
+      box-shadow: 0 3px 0 $secondary-green;
+      background: $primary-green url(../img/plus.svg) center center no-repeat;
     }
   }
   dd[class='active'] {
     h3:after {
-      background: #6fc818 url(../img/minus.svg) center center no-repeat;
+      background: $primary-green url(../img/minus.svg) center center no-repeat;
     }
   }
   div {
@@ -119,69 +142,84 @@ main-content {
 
 
 
-// ---------- FOOTER ---------- //
-
-footer {
-  margin-top: 7em;
-  padding-top: 2em;
-  background: #e8e8e8;
-  height: 13em;
-  font-size: 1.5rem;
-  line-height: 1.4em;
-  a {
-    padding-bottom: 0.3em;
-    color: #6fc818;
-    border-bottom: 3px solid #6fc818;
-    &:hover {
-      color: #6fc818;
-    }
-  }
-  .row {
-    padding-bottom: 1.5em;
-  }
-}
-
-
-
-
-
-
-
-
-
-
 // ---------- SIDEBAR ---------- //
 
 .sidebar {
   max-width: 300px;
-  border: 0.2em solid #6fc818;
+  border: 0.2em solid $primary-green;
   border-radius: 1em;
-  h6 {
-    display: block;
-    width: 100%;
-    background: #6fc818;
-    text-align: center;
-    font-size: 1.2em;
-    line-height: 2.5em;
-    color: white;
-    border-radius: 0.5em 0.5em 0 0;
-  }
-  dl {
-    margin: 0;
-    padding: 0.8em 1em 1em;
-    font-size: 1.1em;
-  }
-  dt a {
-    color: #6fc818;
-    border-bottom: 3px solid #6fc818;
-    &:hover {
-      color: #6fc818;
-    }
-  }
-  dd {
+}
+
+.sidebar__heading {
+  display: block;
+  width: 100%;
+  background: $primary-green;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: normal;
+  line-height: 2.4em;
+  color: white;
+  border-radius: 0.5em 0.5em 0 0;
+}
+
+.sidebar__nav-list {
+  margin: 0;
+  padding: 0.8em 1em 1em;
+  font-size: 1.1em;
+}
+
+.sidebar__nav-link {
+  border-bottom: 3px solid $primary-green;
+}
+
+.sidebar__nav-link,
+.sidebar__nav-link:hover {
+  color: $primary-green;
+}
+
+.sidebar__nav-body {
     padding-bottom: 1.2em;
-    &:last-child {
-      padding-bottom: 0.2em;
+    &:last-of-type {
+      padding-bottom: 0.4em;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// ---------- FOOTER ---------- //
+
+.footer {
+  margin-top: 7em;
+  padding-top: 1.6em;
+  background: #e8e8e8;
+  height: 13em;
+  font-size: 1.4rem;
+  line-height: 1.3em;
+}
+
+.footer__row {
+  padding-bottom: 1.8em;
+  &:last-of-type {
+    padding-bottom: 0;
   }
 }
+
+.footer__link {
+  padding-bottom: 0.3em;
+  border-bottom: 3px solid $primary-green;
+}
+
+.footer__link,
+.footer__link:hover {
+    color: $primary-green;
+}
+

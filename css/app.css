@@ -1,84 +1,83 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300,700);
-/* line 7, ../scss/_custom.scss */
-header {
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+/* line 24, ../scss/_custom.scss */
+.header {
   border-top: 10px solid #6fc818;
   padding-top: 4em;
 }
-/* line 10, ../scss/_custom.scss */
-header .row:last-child {
+
+/* line 29, ../scss/_custom.scss */
+.header__row:last-of-type {
   border-bottom: 1px solid #ccc;
   margin-bottom: 3em;
 }
 
-/* line 16, ../scss/_custom.scss */
-.header__nav {
+/* line 36, ../scss/_custom.scss */
+.header__nav-item:first-child .header__nav-link:before {
+  content: '';
+}
+
+/* line 42, ../scss/_custom.scss */
+.header__nav-link {
+  color: #333;
+  font-size: 0.7em;
   font-weight: bold;
 }
-/* line 18, ../scss/_custom.scss */
-.header__nav a {
-  color: #333;
-}
-/* line 20, ../scss/_custom.scss */
-.header__nav a:before {
+/* line 46, ../scss/_custom.scss */
+.header__nav-link:before {
   content: '\2022';
   color: #333;
   position: relative;
   left: -0.6em;
 }
-/* line 26, ../scss/_custom.scss */
-.header__nav a:hover {
-  color: #6fc818;
-}
-/* line 28, ../scss/_custom.scss */
-.header__nav li {
-  font-size: 0.7em;
-}
-/* line 31, ../scss/_custom.scss */
-.header__nav li:first-child a:before {
-  content: '';
-}
-/* line 36, ../scss/_custom.scss */
-.header__nav .active {
+
+/* line 55, ../scss/_custom.scss */
+.header__nav-link:hover,
+.header__nav-link--active {
   color: #6fc818;
 }
 
-/* line 41, ../scss/_custom.scss */
+/* line 59, ../scss/_custom.scss */
 .logo {
   max-width: 200px;
 }
 
-/* line 56, ../scss/_custom.scss */
-main-content h1 {
+/* line 73, ../scss/_custom.scss */
+.main-content__heading {
   padding-bottom: 1em;
-}
-/* line 57, ../scss/_custom.scss */
-main-content p {
-  padding-bottom: 1.2em;
+  font-size: 2em;
+  font-weight: normal;
 }
 
-/* line 60, ../scss/_custom.scss */
+/* line 79, ../scss/_custom.scss */
+.main-content__body {
+  padding-bottom: 1.2em;
+  font-size: 1.3rem;
+}
+
+/* line 84, ../scss/_custom.scss */
 .main-content--max-width {
   max-width: 39.375em;
 }
 
-/* line 75, ../scss/_custom.scss */
+/* line 98, ../scss/_custom.scss */
 #faq {
   padding-top: 1.5em;
   padding-bottom: 2.75em;
 }
 
-/* line 81, ../scss/_custom.scss */
+/* line 104, ../scss/_custom.scss */
 #faqList dd {
   padding-bottom: 0.6em;
 }
-/* line 84, ../scss/_custom.scss */
+/* line 107, ../scss/_custom.scss */
 #faqList h3 {
   padding: 0 0.25em;
   font-size: 1.9em;
   line-height: 1.2;
   color: #ffaa45;
 }
-/* line 89, ../scss/_custom.scss */
+/* line 112, ../scss/_custom.scss */
 #faqList h3:after {
   content: '';
   display: inline-block;
@@ -89,11 +88,11 @@ main-content p {
   box-shadow: 0 3px 0 #5cb109;
   background: #6fc818 url(../img/plus.svg) center center no-repeat;
 }
-/* line 101, ../scss/_custom.scss */
+/* line 124, ../scss/_custom.scss */
 #faqList dd[class='active'] h3:after {
   background: #6fc818 url(../img/minus.svg) center center no-repeat;
 }
-/* line 105, ../scss/_custom.scss */
+/* line 128, ../scss/_custom.scss */
 #faqList div {
   font-size: 0.8em;
   line-height: 1.4;
@@ -101,69 +100,82 @@ main-content p {
   border: 2px solid #e8e8e8;
 }
 
-/* line 124, ../scss/_custom.scss */
-footer {
-  margin-top: 7em;
-  padding-top: 2em;
-  background: #e8e8e8;
-  height: 13em;
-  font-size: 1.5rem;
-  line-height: 1.4em;
-}
-/* line 131, ../scss/_custom.scss */
-footer a {
-  padding-bottom: 0.3em;
-  color: #6fc818;
-  border-bottom: 3px solid #6fc818;
-}
-/* line 135, ../scss/_custom.scss */
-footer a:hover {
-  color: #6fc818;
-}
-/* line 139, ../scss/_custom.scss */
-footer .row {
-  padding-bottom: 1.5em;
-}
-
-/* line 155, ../scss/_custom.scss */
+/* line 147, ../scss/_custom.scss */
 .sidebar {
   max-width: 300px;
   border: 0.2em solid #6fc818;
   border-radius: 1em;
 }
-/* line 159, ../scss/_custom.scss */
-.sidebar h6 {
+
+/* line 153, ../scss/_custom.scss */
+.sidebar__heading {
   display: block;
   width: 100%;
   background: #6fc818;
   text-align: center;
-  font-size: 1.2em;
-  line-height: 2.5em;
+  font-size: 1.3em;
+  font-weight: normal;
+  line-height: 2.4em;
   color: white;
   border-radius: 0.5em 0.5em 0 0;
 }
-/* line 169, ../scss/_custom.scss */
-.sidebar dl {
+
+/* line 165, ../scss/_custom.scss */
+.sidebar__nav-list {
   margin: 0;
   padding: 0.8em 1em 1em;
   font-size: 1.1em;
 }
-/* line 174, ../scss/_custom.scss */
-.sidebar dt a {
-  color: #6fc818;
+
+/* line 171, ../scss/_custom.scss */
+.sidebar__nav-link {
   border-bottom: 3px solid #6fc818;
 }
-/* line 177, ../scss/_custom.scss */
-.sidebar dt a:hover {
+
+/* line 176, ../scss/_custom.scss */
+.sidebar__nav-link,
+.sidebar__nav-link:hover {
   color: #6fc818;
 }
-/* line 181, ../scss/_custom.scss */
-.sidebar dd {
+
+/* line 180, ../scss/_custom.scss */
+.sidebar__nav-body {
   padding-bottom: 1.2em;
 }
-/* line 183, ../scss/_custom.scss */
-.sidebar dd:last-child {
-  padding-bottom: 0.2em;
+/* line 182, ../scss/_custom.scss */
+.sidebar__nav-body:last-of-type {
+  padding-bottom: 0.4em;
+}
+
+/* line 200, ../scss/_custom.scss */
+.footer {
+  margin-top: 7em;
+  padding-top: 1.6em;
+  background: #e8e8e8;
+  height: 13em;
+  font-size: 1.4rem;
+  line-height: 1.3em;
+}
+
+/* line 209, ../scss/_custom.scss */
+.footer__row {
+  padding-bottom: 1.8em;
+}
+/* line 211, ../scss/_custom.scss */
+.footer__row:last-of-type {
+  padding-bottom: 0;
+}
+
+/* line 216, ../scss/_custom.scss */
+.footer__link {
+  padding-bottom: 0.3em;
+  border-bottom: 3px solid #6fc818;
+}
+
+/* line 222, ../scss/_custom.scss */
+.footer__link,
+.footer__link:hover {
+  color: #6fc818;
 }
 
 /* line 260, ../bower_components/foundation/scss/foundation/components/_global.scss */

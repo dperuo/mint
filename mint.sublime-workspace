@@ -4,12 +4,36 @@
 		"selected_items":
 		[
 			[
-				"faq",
-				"faqList"
+				"si",
+				"sidebar__nav-link"
+			],
+			[
+				"last",
+				"last-of-type"
 			],
 			[
 				"padd",
-				"padding"
+				"padding-bottom"
+			],
+			[
+				"foot",
+				"footer__link"
+			],
+			[
+				"header",
+				"header__nav-link"
+			],
+			[
+				"he",
+				"header__nav-list"
+			],
+			[
+				"head",
+				"header__nav-list"
+			],
+			[
+				"faq",
+				"faqList"
 			],
 			[
 				"max",
@@ -31,7 +55,7 @@
 			"file": "scss/_custom.scss",
 			"settings":
 			{
-				"buffer_size": 2564,
+				"buffer_size": 3033,
 				"line_ending": "Unix"
 			}
 		},
@@ -52,10 +76,18 @@
 			}
 		},
 		{
+			"file": "scss/app.scss",
+			"settings":
+			{
+				"buffer_size": 1508,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2956,
+				"buffer_size": 3693,
 				"line_ending": "Unix"
 			}
 		}
@@ -104,6 +136,7 @@
 	},
 	"file_history":
 	[
+		"/Users/derekperuo/Dropbox/Public/sites/mint/scss/app.scss",
 		"/Users/derekperuo/Dropbox/Public/sites/mint/index.html",
 		"/Users/derekperuo/Dropbox/Public/sites/mint/css/app.css",
 		"/Users/derekperuo/Dropbox/Public/sites/mint/scss/_custom.scss",
@@ -146,6 +179,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"#$prim",
+			"6fc818",
+			"header__nav-link",
+			"main-content",
+			"header",
+			"weight",
+			"font.*weight",
 			"small-",
 			"    $(",
 			"29px",
@@ -161,6 +201,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"$prim"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -179,25 +220,26 @@
 					"file": "scss/_custom.scss",
 					"settings":
 					{
-						"buffer_size": 2564,
+						"buffer_size": 3033,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1251,
+								1251
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1707.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -223,7 +265,7 @@
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2296.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -240,13 +282,39 @@
 						"selection":
 						[
 							[
+								26,
+								26
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "scss/app.scss",
+					"settings":
+					{
+						"buffer_size": 1508,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
 								0,
 								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage"
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -261,29 +329,30 @@
 			"sheets":
 			[
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 2956,
+						"buffer_size": 3693,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1957,
+								1957
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": true,
+							"word_wrap": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 374.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -331,7 +400,7 @@
 	"menu_visible": true,
 	"replace":
 	{
-		"height": 0.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
