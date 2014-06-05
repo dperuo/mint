@@ -7793,93 +7793,83 @@ th.hide-for-touch {
   display: table-cell !important;
 }
 
-/* line 28, ../scss/_custom.scss */
-.header__nav-link:hover,
-.header__nav-link--active,
-.sidebar__nav-link,
-.sidebar__nav-link:hover,
-.footer__link,
-.footer__link:hover {
-  color: #6fc818;
-}
-
-/* line 43, ../scss/_custom.scss */
+/* line 20, ../scss/_custom.scss */
 .header {
   border-top: 10px solid #6fc818;
   padding-top: 4em;
 }
 
-/* line 48, ../scss/_custom.scss */
+/* line 25, ../scss/_custom.scss */
 .header__row:last-of-type {
   border-bottom: 1px solid #ccc;
   margin-bottom: 3em;
 }
 
-/* line 55, ../scss/_custom.scss */
+/* line 32, ../scss/_custom.scss */
 .header__nav-item:first-child .header__nav-link:before {
   content: '';
 }
 
-/* line 61, ../scss/_custom.scss */
+/* line 38, ../scss/_custom.scss */
 .header__nav-link {
   color: #333;
   font-size: 0.7em;
   font-weight: bold;
 }
-/* line 65, ../scss/_custom.scss */
+/* line 42, ../scss/_custom.scss */
 .header__nav-link:before {
   content: '\2022';
-  color: #333;
+  color: inherit;
   position: relative;
   left: -0.6em;
 }
 
-/* line 73, ../scss/_custom.scss */
+/* line 55, ../scss/_custom.scss */
 .logo {
   max-width: 200px;
 }
 
-/* line 87, ../scss/_custom.scss */
+/* line 69, ../scss/_custom.scss */
 .main-content__heading {
   padding-bottom: 1em;
   font-size: 2em;
   font-weight: normal;
 }
 
-/* line 93, ../scss/_custom.scss */
+/* line 75, ../scss/_custom.scss */
 .main-content__body {
   padding-bottom: 1.2em;
   font-size: 1.3rem;
 }
 
-/* line 98, ../scss/_custom.scss */
+/* line 80, ../scss/_custom.scss */
 .main-content--max-width {
   max-width: 39.375em;
 }
 
-/* line 112, ../scss/_custom.scss */
+/* line 94, ../scss/_custom.scss */
 #faq {
   padding-top: 1.5em;
   padding-bottom: 2.75em;
 }
 
-/* line 117, ../scss/_custom.scss */
+/* line 99, ../scss/_custom.scss */
 .faq__item {
   padding-bottom: 0.6em;
 }
-/* line 120, ../scss/_custom.scss */
+/* line 102, ../scss/_custom.scss */
 .faq__item.active .faq__heading:after {
   background: #6fc818 url(../img/minus.svg) center center no-repeat;
 }
 
-/* line 126, ../scss/_custom.scss */
+/* line 108, ../scss/_custom.scss */
 .faq__heading {
   padding: 0 0.25em;
   font-size: 1.9em;
   line-height: 1.2;
   color: #ffaa45;
 }
-/* line 131, ../scss/_custom.scss */
+/* line 113, ../scss/_custom.scss */
 .faq__heading:after {
   content: '';
   display: inline-block;
@@ -7891,7 +7881,7 @@ th.hide-for-touch {
   background: #6fc818 url(../img/plus.svg) center center no-repeat;
 }
 
-/* line 143, ../scss/_custom.scss */
+/* line 125, ../scss/_custom.scss */
 .faq__body.active {
   font-size: 0.8em;
   line-height: 1.4;
@@ -7899,14 +7889,14 @@ th.hide-for-touch {
   border: 2px solid #e8e8e8;
 }
 
-/* line 161, ../scss/_custom.scss */
+/* line 143, ../scss/_custom.scss */
 .sidebar {
   max-width: 300px;
   border: 0.2em solid #6fc818;
   border-radius: 1em;
 }
 
-/* line 167, ../scss/_custom.scss */
+/* line 149, ../scss/_custom.scss */
 .sidebar__heading {
   display: block;
   width: 100%;
@@ -7919,28 +7909,28 @@ th.hide-for-touch {
   border-radius: 0.5em 0.5em 0 0;
 }
 
-/* line 179, ../scss/_custom.scss */
+/* line 161, ../scss/_custom.scss */
 .sidebar__nav-list {
   margin: 0;
   padding: 0.8em 1em 1em;
   font-size: 1.1em;
 }
 
-/* line 185, ../scss/_custom.scss */
+/* line 167, ../scss/_custom.scss */
 .sidebar__nav-link {
   border-bottom: 3px solid #6fc818;
 }
 
-/* line 189, ../scss/_custom.scss */
+/* line 176, ../scss/_custom.scss */
 .sidebar__nav-body {
   padding-bottom: 1.2em;
 }
-/* line 191, ../scss/_custom.scss */
+/* line 178, ../scss/_custom.scss */
 .sidebar__nav-body:last-of-type {
   padding-bottom: 0.4em;
 }
 
-/* line 209, ../scss/_custom.scss */
+/* line 196, ../scss/_custom.scss */
 .footer {
   margin-top: 7em;
   padding-top: 1.6em;
@@ -7950,17 +7940,25 @@ th.hide-for-touch {
   line-height: 1.3em;
 }
 
-/* line 218, ../scss/_custom.scss */
+/* line 205, ../scss/_custom.scss */
 .footer__row {
   padding-bottom: 1.8em;
 }
-/* line 220, ../scss/_custom.scss */
+/* line 207, ../scss/_custom.scss */
 .footer__row:last-of-type {
   padding-bottom: 0;
 }
 
-/* line 225, ../scss/_custom.scss */
+/* line 212, ../scss/_custom.scss */
 .footer__link {
   padding-bottom: 0.3em;
   border-bottom: 3px solid #6fc818;
+}
+
+/* line 233, ../scss/_custom.scss */
+.header__nav-link:hover,
+.header__nav-link--active, .sidebar__nav-link,
+.sidebar__nav-link:hover, .footer__link,
+.footer__link:hover {
+  color: #6fc818;
 }

@@ -15,29 +15,6 @@ $tertiary-color:  #ffaa45;
 
 
 
-
-
-
-// ---------- GLOBAL STYLES ---------- //
-
-.header__nav-link:hover,
-.header__nav-link--active,
-.sidebar__nav-link,
-.sidebar__nav-link:hover,
-.footer__link,
-.footer__link:hover {
-  color: $primary-color;
-}
-
-
-
-
-
-
-
-
-
-
 // ---------- HEADER ---------- //
 
 .header {
@@ -64,10 +41,15 @@ $tertiary-color:  #ffaa45;
   font-weight: bold;
   &:before {
     content: '\2022'; // content: '•';
-    color: #333;
+    color: inherit;
     position: relative;
     left: -0.6em;
   }
+}
+
+.header__nav-link:hover,
+.header__nav-link--active {
+  @extend %primary-color;
 }
 
 .logo {
@@ -123,7 +105,7 @@ $tertiary-color:  #ffaa45;
   }
 }
 
-.faq__heading {  
+.faq__heading {
   padding: 0 0.25em;
   font-size: 1.9em;
   line-height: 1.2;
@@ -186,6 +168,11 @@ $tertiary-color:  #ffaa45;
   border-bottom: 3px solid $primary-color;
 }
 
+.sidebar__nav-link,
+.sidebar__nav-link:hover {
+  @extend %primary-color;
+}
+
 .sidebar__nav-body {
     padding-bottom: 1.2em;
     &:last-of-type {
@@ -227,4 +214,22 @@ $tertiary-color:  #ffaa45;
   border-bottom: 3px solid $primary-color;
 }
 
+.footer__link,
+.footer__link:hover {
+  @extend %primary-color;
+}
 
+
+
+
+
+
+
+
+
+
+// ---------- GLOBAL STYLES ---------- //
+
+%primary-color {
+  color: $primary-color;
+}

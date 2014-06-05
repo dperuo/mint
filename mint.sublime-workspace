@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"pr",
+				"primary-color"
+			],
+			[
 				"ti",
 				"tertiary-color"
 			],
@@ -59,7 +63,7 @@
 			"file": "scss/_custom.scss",
 			"settings":
 			{
-				"buffer_size": 3034,
+				"buffer_size": 3136,
 				"line_ending": "Unix"
 			}
 		},
@@ -132,9 +136,9 @@
 	},
 	"file_history":
 	[
+		"/Users/derekperuo/Dropbox/Public/sites/mint/index.html",
 		"/Users/derekperuo/Dropbox/Public/sites/mint/scss/app.scss",
 		"/Users/derekperuo/Dropbox/Public/sites/mint/css/app.css",
-		"/Users/derekperuo/Dropbox/Public/sites/mint/index.html",
 		"/Users/derekperuo/Dropbox/Public/sites/mint/scss/_custom.scss",
 		"/Users/derekperuo/Dropbox/Public/sites/mint/scss/_settings.scss",
 		"/Users/derekperuo/Dropbox/Public/sites/mint/js/app.js",
@@ -175,6 +179,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"color:.*;",
+			";\n",
+			"333",
+			"color:.*;",
 			"-green",
 			"#$prim",
 			"6fc818",
@@ -195,7 +203,7 @@
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
 			"$prim"
@@ -209,7 +217,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -217,15 +225,15 @@
 					"file": "scss/_custom.scss",
 					"settings":
 					{
-						"buffer_size": 3034,
+						"buffer_size": 3136,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2053,
-								2053
+								288,
+								288
 							]
 						],
 						"settings":
@@ -236,7 +244,7 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2166.0,
+						"translation.y": 3566.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -279,8 +287,8 @@
 						"selection":
 						[
 							[
-								447,
-								447
+								419,
+								419
 							]
 						],
 						"settings":
@@ -311,19 +319,18 @@
 						"selection":
 						[
 							[
-								1957,
-								1957
+								3284,
+								3284
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"word_wrap": false
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 336.0,
+						"translation.y": 1088.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
