@@ -235,6 +235,9 @@ $icon-size: 1.8rem;
   height: 13em;
   font-size: 1.4rem;
   line-height: 1.3em;
+  @media screen and (max-width: 64em) {
+    margin-top: 5em;
+  }
   @media screen and (max-width: 40em) {
     margin-top: 3em;
   }

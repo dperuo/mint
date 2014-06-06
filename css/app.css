@@ -7997,6 +7997,12 @@ th.hide-for-touch {
   font-size: 1.4rem;
   line-height: 1.3em;
 }
+@media screen and (max-width: 64em) {
+  /* line 231, ../scss/_custom.scss */
+  .footer {
+    margin-top: 5em;
+  }
+}
 @media screen and (max-width: 40em) {
   /* line 231, ../scss/_custom.scss */
   .footer {
@@ -8004,28 +8010,28 @@ th.hide-for-touch {
   }
 }
 
-/* line 244, ../scss/_custom.scss */
+/* line 247, ../scss/_custom.scss */
 .footer__row {
   padding-bottom: 1.8em;
 }
-/* line 246, ../scss/_custom.scss */
+/* line 249, ../scss/_custom.scss */
 .footer__row:last-of-type {
   padding-bottom: 0;
 }
 @media screen and (max-width: 64em) {
-  /* line 244, ../scss/_custom.scss */
+  /* line 247, ../scss/_custom.scss */
   .footer__row {
     padding-bottom: 1.8em;
   }
 }
 
-/* line 254, ../scss/_custom.scss */
+/* line 257, ../scss/_custom.scss */
 .footer__link {
   padding-bottom: 0.3em;
   border-bottom: 3px solid #6fc818;
 }
 
-/* line 275, ../scss/_custom.scss */
+/* line 278, ../scss/_custom.scss */
 .header__nav-link:hover,
 .header__nav-link--active, .sidebar__nav-link,
 .sidebar__nav-link:hover, .footer__link,
@@ -8034,7 +8040,7 @@ th.hide-for-touch {
 }
 
 @media screen and (max-width: 64em) {
-  /* line 282, ../scss/_custom.scss */
+  /* line 285, ../scss/_custom.scss */
   .header,
   .main-content,
   .footer {
