@@ -20,6 +20,9 @@ $tertiary-color:  #ffaa45;
 .header {
   border-top: 10px solid $primary-color;
   padding-top: 4em;
+  @media screen and (max-width: 40em) {
+      padding-top: 2em;
+  }
 }
 
 .header__row:last-of-type {
@@ -54,6 +57,9 @@ $tertiary-color:  #ffaa45;
 
 .logo {
   max-width: 200px;
+  @media screen and (max-width: 40em) {
+      padding-bottom: 2em;
+  }
 }
 
 
@@ -75,10 +81,15 @@ $tertiary-color:  #ffaa45;
 .main-content__body {
   padding-bottom: 1.2em;
   font-size: 1.3rem;
+  @media screen and (max-width: 64em) {
+    &:last-child {
+      padding-bottom: 2em;
+    }
+  }
 }
 
 .main-content--max-width {
-  max-width: 39.375em;
+  padding-right: 0.5em;
 }
 
 
@@ -93,7 +104,14 @@ $tertiary-color:  #ffaa45;
 
 #faq {
   padding-top: 1.5em;
-  padding-bottom: 2.75em;
+  padding-bottom: 2em;
+  @media screen and (max-width: 64em) {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 40em) {
+      max-width: 100%;
+  }
 }
 
 .faq__item {
@@ -105,20 +123,29 @@ $tertiary-color:  #ffaa45;
   }
 }
 
+$icon-size: 1.8rem;
+
 .faq__heading {
   padding: 0 0.25em;
-  font-size: 1.9em;
   line-height: 1.2;
+  font-size: 2em;
+  font-weight: normal;
   color: $tertiary-color;
   &:after {
     content: '';
     display: inline-block;
     float: right;
-    width: 29px;
-    height: 29px;
-    border-radius: 29px;
+    width:  $icon-size;
+    height: $icon-size;
+    border-radius: $icon-size;
     box-shadow: 0 3px 0 $secondary-color;
     background: $primary-color url(../img/plus.svg) center center no-repeat;
+  }
+  @media screen and (max-width: 64em) {
+    font-size: 1.8em;
+  }
+  @media screen and (max-width: 40em) {
+    font-size: 1.7em;
   }
 }
 
@@ -144,6 +171,14 @@ $tertiary-color:  #ffaa45;
   max-width: 300px;
   border: 0.2em solid $primary-color;
   border-radius: 1em;
+  @media screen and (max-width: 64em) {
+    max-width: 75%;
+    margin-right: 12.5%;
+  }
+  @media screen and (max-width: 40em) {
+    max-width: 100%;
+    margin-right: 0;
+  }
 }
 
 .sidebar__heading {
@@ -200,6 +235,10 @@ $tertiary-color:  #ffaa45;
   height: 13em;
   font-size: 1.4rem;
   line-height: 1.3em;
+  @media screen and (max-width: 40em) {
+    margin-top: 3em;
+  }
+
 }
 
 .footer__row {
@@ -207,6 +246,9 @@ $tertiary-color:  #ffaa45;
   &:last-of-type {
     padding-bottom: 0;
   }
+    @media screen and (max-width: 64em) {
+      padding-bottom: 1.8em;
+    }
 }
 
 .footer__link {
@@ -232,4 +274,13 @@ $tertiary-color:  #ffaa45;
 
 %primary-color {
   color: $primary-color;
+}
+
+@media screen and (max-width: 64em) {
+  .header,
+  .main-content,
+  .footer {
+    padding-left:  2rem;
+    padding-right: 2rem;
+  }
 }
