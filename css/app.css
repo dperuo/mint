@@ -7922,8 +7922,9 @@ th.hide-for-touch {
   width: 1.8rem;
   height: 1.8rem;
   border-radius: 1.8rem;
-  box-shadow: 0 3px 0 #5cb109;
   background: #6fc818 url(../img/plus.svg) center center no-repeat;
+  -webkit-box-shadow: 0 3px 0 #5cb109;
+  box-shadow: 0 3px 0 #5cb109;
 }
 @media screen and (max-width: 64em) {
   /* line 133, ../scss/_custom.scss */
@@ -7942,13 +7943,13 @@ th.hide-for-touch {
   .faq__heading {
     font-size: 1em;
   }
-  /* line 157, ../scss/_custom.scss */
+  /* line 158, ../scss/_custom.scss */
   .faq__heading:after {
     display: none;
   }
 }
 
-/* line 163, ../scss/_custom.scss */
+/* line 164, ../scss/_custom.scss */
 .faq__body.active {
   font-size: 0.8em;
   line-height: 1.4;
@@ -7956,27 +7957,27 @@ th.hide-for-touch {
   border: 2px solid #e8e8e8;
 }
 
-/* line 181, ../scss/_custom.scss */
+/* line 182, ../scss/_custom.scss */
 .sidebar {
   max-width: 300px;
   border: 0.2em solid #6fc818;
   border-radius: 1em;
 }
 @media screen and (max-width: 64em) {
-  /* line 181, ../scss/_custom.scss */
+  /* line 182, ../scss/_custom.scss */
   .sidebar {
     max-width: 75%;
     margin-right: 12.5%;
   }
 }
 @media screen and (max-width: 40em) {
-  /* line 181, ../scss/_custom.scss */
+  /* line 182, ../scss/_custom.scss */
   .sidebar {
     display: none;
   }
 }
 
-/* line 196, ../scss/_custom.scss */
+/* line 197, ../scss/_custom.scss */
 .sidebar__heading {
   display: block;
   width: 100%;
@@ -7989,28 +7990,28 @@ th.hide-for-touch {
   border-radius: 0.5em 0.5em 0 0;
 }
 
-/* line 208, ../scss/_custom.scss */
+/* line 209, ../scss/_custom.scss */
 .sidebar__nav-list {
   margin: 0;
   padding: 0.8em 1em 1em;
   font-size: 1.1em;
 }
 
-/* line 214, ../scss/_custom.scss */
+/* line 215, ../scss/_custom.scss */
 .sidebar__nav-link {
   border-bottom: 3px solid #6fc818;
 }
 
-/* line 223, ../scss/_custom.scss */
+/* line 224, ../scss/_custom.scss */
 .sidebar__nav-body {
   padding-bottom: 1.2em;
 }
-/* line 225, ../scss/_custom.scss */
+/* line 226, ../scss/_custom.scss */
 .sidebar__nav-body:last-of-type {
   padding-bottom: 0.4em;
 }
 
-/* line 243, ../scss/_custom.scss */
+/* line 244, ../scss/_custom.scss */
 .footer {
   margin-top: 7em;
   padding-top: 1.6em;
@@ -8020,53 +8021,53 @@ th.hide-for-touch {
   line-height: 1.3em;
 }
 @media screen and (max-width: 64em) {
-  /* line 243, ../scss/_custom.scss */
+  /* line 244, ../scss/_custom.scss */
   .footer {
     margin-top: 5em;
   }
 }
 @media screen and (max-width: 64em) and (orientation: portrait) {
-  /* line 243, ../scss/_custom.scss */
+  /* line 244, ../scss/_custom.scss */
   .footer {
     margin-top: 4em;
   }
 }
 @media screen and (max-width: 40em) {
-  /* line 243, ../scss/_custom.scss */
+  /* line 244, ../scss/_custom.scss */
   .footer {
     margin-top: 3em;
   }
 }
 
-/* line 262, ../scss/_custom.scss */
+/* line 263, ../scss/_custom.scss */
 .footer__row {
   padding-bottom: 1.8em;
 }
-/* line 264, ../scss/_custom.scss */
+/* line 265, ../scss/_custom.scss */
 .footer__row:last-of-type {
   padding-bottom: 0;
 }
 @media screen and (max-width: 64em) {
-  /* line 262, ../scss/_custom.scss */
+  /* line 263, ../scss/_custom.scss */
   .footer__row {
     padding-bottom: 1.8em;
   }
 }
 
-/* line 272, ../scss/_custom.scss */
+/* line 273, ../scss/_custom.scss */
 .footer__link {
   padding-bottom: 0.3em;
   border-bottom: 3px solid #6fc818;
 }
 
 @media screen and (max-width: 40em) and (orientation: portrait) {
-  /* line 277, ../scss/_custom.scss */
+  /* line 278, ../scss/_custom.scss */
   .contact {
     font-size: 1.1rem;
   }
 }
 
-/* line 299, ../scss/_custom.scss */
+/* line 300, ../scss/_custom.scss */
 .header__nav-link:hover,
 .header__nav-link--active, .sidebar__nav-link,
 .sidebar__nav-link:hover, .footer__link,
@@ -8075,7 +8076,7 @@ th.hide-for-touch {
 }
 
 @media screen and (max-width: 64em) {
-  /* line 306, ../scss/_custom.scss */
+  /* line 307, ../scss/_custom.scss */
   .header,
   .main-content,
   .footer {

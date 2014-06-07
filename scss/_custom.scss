@@ -143,8 +143,9 @@ $icon-size: 1.8rem;
     width:  $icon-size;
     height: $icon-size;
     border-radius: $icon-size;
-    box-shadow: 0 3px 0 $secondary-color;
     background: $primary-color url(../img/plus.svg) center center no-repeat;
+    -webkit-box-shadow: 0 3px 0 $secondary-color;
+            box-shadow: 0 3px 0 $secondary-color;
   }
   @media screen and (max-width: 64em) {
     font-size: 1.8em;
