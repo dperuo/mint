@@ -21,7 +21,7 @@ $tertiary-color:  #ffaa45;
   border-top: 10px solid $primary-color;
   padding-top: 4em;
   @media screen and (max-width: 40em) {
-      padding-top: 2em;
+    padding-top: 2em;
   }
 }
 
@@ -50,6 +50,10 @@ $tertiary-color:  #ffaa45;
   }
 }
 
+.header__nav-list--btn {
+  @extend %primary-color-bg;
+}
+
 .header__nav-link:hover,
 .header__nav-link--active {
   @extend %primary-color;
@@ -61,6 +65,28 @@ $tertiary-color:  #ffaa45;
       padding-bottom: 2em;
   }
 }
+
+
+/* Navigation menu. Visible only on small screens. */
+
+.f-dropdown {
+  -webkit-box-shadow: 0.1em 0.1em 0.5em rgba(0,0,0,0.5);
+          box-shadow: 0.1em 0.1em 0.5em rgba(0,0,0,0.5);
+  .header__nav-item {
+    @extend .header__nav-item;
+  }
+  .header__nav-link {
+    &:before {
+      content: '';
+    }
+    @extend .header__nav-link;
+  }
+  .header__nav-link:hover,
+  .header__nav-link--active {
+    @extend .header__nav-link--active;
+  }
+}
+
 
 
 
@@ -93,7 +119,12 @@ $tertiary-color:  #ffaa45;
 }
 
 .main-content--max-width {
+  margin-right: 1.25em;
   padding-right: 0.5em;
+  @media screen and (max-width: 64em) {
+    margin-right: 0;
+    padding-right: 0;
+  }
 }
 
 
@@ -110,12 +141,8 @@ $tertiary-color:  #ffaa45;
   padding-top: 1.5em;
   padding-bottom: 2em;
   @media screen and (max-width: 64em) {
-    max-width: 75%;
-    margin: 0 auto;
+    margin-right: 25%;
     padding-top: 0;
-  }
-  @media screen and (max-width: 40em) {
-      max-width: 100%;
   }
 }
 
@@ -150,14 +177,19 @@ $icon-size: 1.8rem;
   @media screen and (max-width: 64em) {
     font-size: 1.8em;
   }
-  @media screen and (max-width: 64em) and (orientation: portrait) {
-   font-size: 1.6em;
-  }
   @media screen and (max-width: 40em) {
-    font-size: 1em;
     &:after {
       display: none;
     }
+  }
+  @media handheld and (max-width: 64em) and (orientation: portrait) {
+    font-size: 1.4em;
+    &:after {
+      display: none;
+    }
+  }
+  @media handheld and (max-width: 40em) {
+    font-size: 1em;
   }
 }
 
@@ -184,14 +216,7 @@ $icon-size: 1.8rem;
   border: 0.2em solid $primary-color;
   border-radius: 1em;
   @media screen and (max-width: 64em) {
-    max-width: 75%;
-    margin-right: 12.5%;
-    margin-left: 12.5%;
-  }
-  @media screen and (max-width: 40em) {
-    display: none;
-    // max-width: 100%;
-    // margin-right: 0;
+    max-width: 100%;
   }
 }
 
@@ -229,6 +254,9 @@ $icon-size: 1.8rem;
     }
 }
 
+.sidebar--btn {
+  @extend %primary-color-bg;
+}
 
 
 
@@ -300,6 +328,16 @@ $icon-size: 1.8rem;
 
 %primary-color {
   color: $primary-color;
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+%primary-color-bg {
+  background-color: $primary-color;
+  &:hover {
+    background-color: $secondary-color;
+  }
 }
 
 @media screen and (max-width: 64em) {

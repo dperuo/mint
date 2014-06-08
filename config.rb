@@ -15,7 +15,7 @@ javascripts_dir = "js"
 # relative_assets = true
 
 # Disable debugging comments
-# line_comments = false
+line_comments = false
 
 # Auto-compile production stylesheet
 # on_stylesheet_saved do
