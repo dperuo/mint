@@ -1,0 +1,90 @@
+//
+// FONTS.SCSS
+//
+// Legacy support for web fonts using `@font-face`.
+//
+
+
+// Open Sans
+// Designed by Steve Matteson
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/open-sans/300/OpenSans-Light-webfont.eot');
+  src: url('fonts/open-sans/300/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/open-sans/300/OpenSans-Light-webfont.woff') format('woff'),
+       url('fonts/open-sans/300/OpenSans-Light-webfont.ttf') format('truetype'),
+       url('fonts/open-sans/300/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/open-sans/400/OpenSans-Regular-webfont.eot');
+  src: url('fonts/open-sans/400/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/open-sans/400/OpenSans-Regular-webfont.woff') format('woff'),
+       url('fonts/open-sans/400/OpenSans-Regular-webfont.ttf') format('truetype'),
+       url('fonts/open-sans/400/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/open-sans/600/OpenSans-Semibold-webfont.eot');
+  src: url('fonts/open-sans/600/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/open-sans/600/OpenSans-Semibold-webfont.woff') format('woff'),
+       url('fonts/open-sans/600/OpenSans-Semibold-webfont.ttf') format('truetype'),
+       url('fonts/open-sans/600/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/open-sans/700/OpenSans-Bold-webfont.eot');
+  src: url('fonts/open-sans/700/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/open-sans/700/OpenSans-Bold-webfont.woff') format('woff'),
+       url('fonts/open-sans/700/OpenSans-Bold-webfont.ttf') format('truetype'),
+       url('fonts/open-sans/700/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/open-sans/800/OpenSans-ExtraBold-webfont.eot');
+  src: url('fonts/open-sans/800/OpenSans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/open-sans/800/OpenSans-ExtraBold-webfont.woff') format('woff'),
+       url('fonts/open-sans/800/OpenSans-ExtraBold-webfont.ttf') format('truetype'),
+       url('fonts/open-sans/800/OpenSans-ExtraBold-webfont.svg#open_sansextrabold') format('svg');
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+// Montserrat
+// Designed by Julieta Ulanovsky
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/montserrat/400/Montserrat-Regular.eot');
+  src: url('fonts/montserrat/400/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+       url('fonts/montserrat/400/Montserrat-Regular.woff') format('woff'),
+       url('fonts/montserrat/400/Montserrat-Regular.ttf') format('truetype'),
+       url('fonts/montserrat/400/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+     font-weight: 400;
+     font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/montserrat/700/Montserrat-Bold.eot');
+  src: url('fonts/montserrat/700/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+       url('fonts/montserrat/700/Montserrat-Bold.woff') format('woff'),
+       url('fonts/montserrat/700/Montserrat-Bold.ttf') format('truetype'),
+       url('fonts/montserrat/700/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+     font-weight: 700;
+     font-style: normal;
+}
