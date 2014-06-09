@@ -177,19 +177,14 @@ $icon-size: 1.8rem;
   @media screen and (max-width: 64em) {
     font-size: 1.8em;
   }
-  @media screen and (max-width: 40em) {
-    &:after {
-      display: none;
-    }
-  }
-  @media handheld and (max-width: 64em) and (orientation: portrait) {
+  @media screen and (max-width: 63.9375em) {
     font-size: 1.4em;
+  }
+  @media screen and (max-width: 40em) {
+    font-size: 1em;
     &:after {
       display: none;
     }
-  }
-  @media handheld and (max-width: 40em) {
-    font-size: 1em;
   }
 }
 
@@ -280,7 +275,7 @@ $icon-size: 1.8rem;
   @media screen and (max-width: 64em) {
     margin-top: 5em;
   }
-  @media screen and (max-width: 64em) and (orientation: portrait){
+  @media screen and (max-width: 64em) and (orientation: portrait) {
     margin-top: 4em;
   }
   @media screen and (max-width: 40em) {

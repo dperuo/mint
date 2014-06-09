@@ -6681,22 +6681,17 @@ th.hide-for-touch {
     font-size: 1.8em;
   }
 }
-@media screen and (max-width: 40em) {
-  .faq__heading:after {
-    display: none;
-  }
-}
-@media handheld and (max-width: 64em) and (orientation: portrait) {
+@media screen and (max-width: 63.9375em) {
   .faq__heading {
     font-size: 1.4em;
   }
-  .faq__heading:after {
-    display: none;
-  }
 }
-@media handheld and (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .faq__heading {
     font-size: 1em;
+  }
+  .faq__heading:after {
+    display: none;
   }
 }
 
