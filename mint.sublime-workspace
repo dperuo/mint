@@ -79,7 +79,7 @@
 			"file": "scss/_custom.scss",
 			"settings":
 			{
-				"buffer_size": 5388,
+				"buffer_size": 5389,
 				"line_ending": "Unix"
 			}
 		},
@@ -206,7 +206,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 93.0,
+		"height": 0.0,
 		"where_history":
 		[
 			""
@@ -275,15 +275,61 @@
 					"file": "scss/_custom.scss",
 					"settings":
 					{
-						"buffer_size": 5388,
+						"buffer_size": 5389,
 						"regions":
 						{
+							"bookmarks":
+							{
+								"flags": 144,
+								"icon": "bookmark",
+								"regions":
+								[
+									[
+										184,
+										184
+									],
+									[
+										332,
+										332
+									],
+									[
+										1573,
+										1573
+									],
+									[
+										2208,
+										2208
+									],
+									[
+										3396,
+										3396
+									],
+									[
+										4198,
+										4198
+									],
+									[
+										5025,
+										5025
+									]
+								],
+								"scope": "bookmarks"
+							},
+							"mark":
+							{
+								"flags": 144,
+								"icon": "dot",
+								"regions":
+								[
+								],
+								"scope": "mark"
+							}
 						},
 						"selection":
 						[
 							[
-								5331,
-								5331
+								2532,
+								2532
 							]
 						],
 						"settings":
@@ -294,7 +340,7 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 5276.0,
+						"translation.y": 2590.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -417,12 +463,37 @@
 						"buffer_size": 5168,
 						"regions":
 						{
+							"bookmarks":
+							{
+								"flags": 144,
+								"icon": "bookmark",
+								"regions":
+								[
+									[
+										525,
+										525
+									],
+									[
+										2191,
+										2191
+									],
+									[
+										3281,
+										3281
+									],
+									[
+										4536,
+										4536
+									]
+								],
+								"scope": "bookmarks"
+							}
 						},
 						"selection":
 						[
 							[
-								252,
-								252
+								4509,
+								4509
 							]
 						],
 						"settings":
@@ -433,7 +504,7 @@
 							"word_wrap": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 37.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
