@@ -11,7 +11,7 @@ $primary-color:   #6fc818;
 $secondary-color: #5cb109;
 $tertiary-color:  #ffaa45;
 
-
+$faq-icon-size: 1.8rem;
 
 
 
@@ -26,8 +26,8 @@ $tertiary-color:  #ffaa45;
 }
 
 .header__row:last-of-type {
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 3em;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 3em;
 }
 
 .header__nav-item {
@@ -62,7 +62,7 @@ $tertiary-color:  #ffaa45;
 .logo {
   max-width: 200px;
   @media screen and (max-width: 40em) {
-      padding-bottom: 2em;
+    padding-bottom: 2em;
   }
 }
 
@@ -71,7 +71,7 @@ $tertiary-color:  #ffaa45;
 
 .f-dropdown {
   -webkit-box-shadow: 0.1em 0.1em 0.5em rgba(0,0,0,0.5);
-          box-shadow: 0.1em 0.1em 0.5em rgba(0,0,0,0.5);
+  box-shadow: 0.1em 0.1em 0.5em rgba(0,0,0,0.5);
   .header__nav-item {
     @extend .header__nav-item;
   }
@@ -111,7 +111,7 @@ $tertiary-color:  #ffaa45;
   padding-bottom: 1.2em;
   font-size: 1.3rem;
   @media screen and (max-width: 64em) {
-      padding-bottom: 2em;
+    padding-bottom: 2em;
   }
   @media screen and (max-width: 40em) and (orientation: portrait) {
     font-size: 1rem;
@@ -155,8 +155,6 @@ $tertiary-color:  #ffaa45;
   }
 }
 
-$icon-size: 1.8rem;
-
 .faq__heading {
   padding: 0 0.25em;
   line-height: 1.2;
@@ -167,9 +165,9 @@ $icon-size: 1.8rem;
     content: '';
     display: inline-block;
     float: right;
-    width:  $icon-size;
-    height: $icon-size;
-    border-radius: $icon-size;
+    width:  $faq-icon-size;
+    height: $faq-icon-size;
+    border-radius: $faq-icon-size;
     background: $primary-color url(../img/plus.svg) center center no-repeat;
     -webkit-box-shadow: 0 3px 0 $secondary-color;
             box-shadow: 0 3px 0 $secondary-color;
@@ -189,9 +187,9 @@ $icon-size: 1.8rem;
 }
 
 .faq__body.active {
+  padding: 1em;
   font-size: 0.8em;
   line-height: 1.4;
-  padding: 1em;
   border: 2px solid #e8e8e8;
 }
 
@@ -243,10 +241,10 @@ $icon-size: 1.8rem;
 }
 
 .sidebar__nav-body {
-    padding-bottom: 1.2em;
-    &:last-of-type {
-      padding-bottom: 0.4em;
-    }
+  padding-bottom: 1.2em;
+  &:last-of-type {
+    padding-bottom: 0.4em;
+  }
 }
 
 .sidebar--btn {

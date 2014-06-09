@@ -79,7 +79,7 @@
 			"file": "scss/_custom.scss",
 			"settings":
 			{
-				"buffer_size": 5716,
+				"buffer_size": 5388,
 				"line_ending": "Unix"
 			}
 		},
@@ -119,7 +119,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 5122,
+				"buffer_size": 5168,
 				"line_ending": "Unix"
 			}
 		}
@@ -217,6 +217,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"$icon-size",
+			"handheld",
 			"../",
 			"extend",
 			"%primary",
@@ -265,7 +267,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -273,15 +275,15 @@
 					"file": "scss/_custom.scss",
 					"settings":
 					{
-						"buffer_size": 5716,
+						"buffer_size": 5388,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								326,
-								326
+								5331,
+								5331
 							]
 						],
 						"settings":
@@ -292,7 +294,7 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 5276.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -309,8 +311,8 @@
 						"selection":
 						[
 							[
-								1451,
-								1460
+								13548,
+								13556
 							]
 						],
 						"settings":
@@ -318,7 +320,7 @@
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 760.0,
+						"translation.y": 7655.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -412,15 +414,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 5122,
+						"buffer_size": 5168,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1901,
-								1901
+								252,
+								252
 							]
 						],
 						"settings":
@@ -431,7 +433,7 @@
 							"word_wrap": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 377.0,
+						"translation.y": 37.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

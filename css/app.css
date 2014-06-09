@@ -6696,9 +6696,9 @@ th.hide-for-touch {
 }
 
 .faq__body.active {
+  padding: 1em;
   font-size: 0.8em;
   line-height: 1.4;
-  padding: 1em;
   border: 2px solid #e8e8e8;
 }
 
