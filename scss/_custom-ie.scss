@@ -1,0 +1,314 @@
+
+// ---------- GLOBAL VARIABLES ---------- //
+
+$primary-color:   #6fc818;
+$secondary-color: #5cb109;
+$tertiary-color:  #ffaa45;
+
+
+
+
+
+// ---------- HEADER ---------- //
+
+.header {
+  border-top: 10px solid $primary-color;
+  padding-top: 4em;
+}
+
+.header__row {
+  @extend %display-table;
+  @extend %centered-on-screen;
+  &:last-of-type {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1em;
+  }
+}
+
+.medium-6 {
+  @extend %display-table-cell;
+  width: (60em / 2);
+}
+
+.header__nav-list {
+  @extend %display-table;
+  margin-left: 8.5em;
+}
+
+.header__nav-item {
+  @extend %display-table-cell;
+  padding-left: 1.2em;
+  &:first-child {
+    .header__nav-link:before {
+      content: '';
+    }
+  }
+}
+
+.header__nav-link {
+  color: #333;
+  font-size: 1em;
+  font-weight: bold;
+  list-style-type: none;
+  &:before {
+    content: '\2022'; // content: '•';
+    color: inherit;
+    position: relative;
+    left: -0.6em;
+  }
+}
+
+.header__nav-link:hover,
+.header__nav-link--active {
+  @extend %primary-color;
+}
+
+.f-dropdown,
+.header__nav-list--btn {
+  @extend %display-none;
+}
+
+.logo {
+  width: 12.5em;
+}
+
+
+
+
+
+
+
+
+
+
+// ---------- MAIN CONTENT ---------- //
+
+.main-content {
+  @extend %centered-on-screen;
+  @extend %display-table;
+}
+
+.large-8 {
+  @extend %display-table-cell;
+  width: (60em / 1.5);
+}
+
+.main-content__heading {
+  padding-bottom: 0;
+  font-size: 2em;
+  font-weight: normal;
+}
+
+.main-content__body {
+  padding-bottom: 1em;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+.main-content--max-width {
+}
+
+
+
+
+
+
+
+
+
+
+// ---------- FAQ ACCORDION ---------- //
+
+#faq {
+  padding-top:    0;
+  padding-bottom: 1em;
+}
+
+.faq__item {
+  margin: 0;
+  padding-bottom: 1.4em;
+}
+
+.faq__heading {
+  padding: 0;
+  margin: 0;
+  line-height: 2;
+  font-size: 2em;
+  font-weight: normal;
+  color: $tertiary-color;
+}
+
+.faq__body {
+  font-size: 1em;
+  line-height: 1.4;
+  font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+
+
+// ---------- SIDEBAR ---------- //
+
+.sidebar {
+  @extend %display-table-cell;
+  width: (60em / 3.2);
+  padding-left: 1.9em;
+}
+
+.sidebar__heading {
+  display: block;
+  width: 100%;
+  margin-top:    0;
+  margin-bottom: 0;
+  background: $primary-color;
+  text-align: center;
+  font-size: 1.3em;
+  line-height: 2.4em;
+  font-weight: normal;
+  color: white;
+  border-radius: 1em 1em 0 0;
+}
+
+.sidebar__nav-list {
+  margin: 0;
+  padding: 0.8em 1em 1em;
+  font-size: 1.1em;
+  border: 0.2em solid $primary-color;
+  border-radius: 0em 0em 1em 1em;
+}
+
+.sidebar__nav-link {
+  font-weight: bold;
+  border-bottom: 3px solid $primary-color;
+}
+
+.sidebar__nav-link,
+.sidebar__nav-link:hover {
+  @extend %primary-color;
+}
+
+.sidebar__nav-body {
+  padding-top:    0.2em;
+  padding-bottom: 1.2em;
+  margin-left: 0;
+  &:last-of-type {
+    padding-bottom: 0;
+  }
+}
+
+.show-for-small-only {
+  @extend %display-none;
+}
+
+
+
+
+
+
+
+
+
+
+// ---------- FOOTER ---------- //
+
+.footer {
+  margin-top: 7em;
+  padding-top: 2.1em;
+  background: #e8e8e8;
+  height: 13em;
+}
+
+.footer__row {
+  @extend %centered-on-screen;
+  padding-bottom: 1.8em;
+  &:last-of-type {
+    padding-bottom: 0;
+  }
+}
+
+.footer__link {
+  padding-bottom: 0.3em;
+  border-bottom: 3px solid $primary-color;
+}
+
+.contact {
+  padding-top: 0.4em;
+  line-height: 1.5;
+}
+
+.contact,
+.footer__link {
+  font-size: 1.4em;
+}
+
+.footer__link,
+.footer__link:hover {
+  @extend %primary-color;
+}
+
+
+
+
+
+
+
+
+
+
+// ---------- GLOBAL STYLES ---------- //
+
+html,
+body {
+  margin:  0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+%display-table {
+  display: table;
+  border-collapse: collapse;
+}
+
+%display-table-cell {
+  display: table-cell;
+}
+
+%centered-on-screen {
+  width: 60em;
+  margin: 0 auto;
+}
+
+%display-none {
+  display: none;
+}
+
+%primary-color {
+  color: $primary-color;
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+%primary-color-bg {
+  background-color: $primary-color;
+  &:hover {
+    background-color: $secondary-color;
+  }
+}
